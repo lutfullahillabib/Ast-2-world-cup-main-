@@ -19,7 +19,7 @@ body {
     background: #161616;
     border-radius: 30px;
     display: flex;
-    gap: 24px;
+    /* gap: 24px; */
     /* align-items: center; */
     margin: 50px auto;
     margin-bottom: 0;
@@ -29,6 +29,7 @@ body {
     /* flex: 1; */
     width: 50%;
     padding: 110px;
+    padding-right: 0;
 }
 
 .banner-info h1 {
@@ -59,7 +60,7 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 26px;
     color: #FFFFFF;
 
@@ -85,11 +86,13 @@ body {
 }
 
 /* banner-img */
+/* img */
 .bb {
     width: 100%;
     height: 100%;
 }
 
+/* div of img */
 .ii {
     width: 100%;
     margin-top: 33px;
@@ -315,7 +318,9 @@ footer a {
 
 .social-icons {
     margin-top: 50px;
+
 }
+
 
 .fa-brands {
     font-size: 40px;
@@ -390,3 +395,202 @@ footer a {
 /*==========
  Resposive 
 =========== */
+
+/* Mobile-View  */
+@media only screen and (max-width: 688px) {
+
+    /* Head-Banner */
+    .banner {
+        display: block;
+        width: 80%;
+        height: 100%;
+        /* justify-content: center; */
+        /* margin: 20%; */
+        /* margin-bottom: 0; */
+    }
+
+    .banner-info {
+        text-align: center;
+        width: 80%;
+        padding: 10%;
+        padding-bottom: 0;
+    }
+
+    .banner-info h1 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 8px;
+        width: 100%;
+
+    }
+
+    .banner-info p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+        width: 100%;
+        height: 48px;
+        /* display: inline-block; */
+        overflow: hidden;
+        /* text-overflow: ellipsis; */
+        /* white-space: nowrap; */
+        margin-bottom: 16px;
+    }
+
+    .ii img {
+        margin-bottom: -7px;
+    }
+
+    .ii {
+        width: 90%;
+        margin: 10% 5%;
+        margin-bottom: 0;
+    }
+
+    /* middle  */
+
+    .middle {
+        display: block;
+        margin-top: 24px;
+        width: 80%;
+        /* height: 100%; */
+    }
+
+    /* nav-bar */
+    nav {
+        width: 100%;
+        margin: 24px auto;
+        background-color: #ffffff;
+    }
+
+    nav ul {
+        background-color: #FFFFFF;
+    }
+
+    nav ul a {
+        border: 1px solid rgb(186, 186, 186);
+        border-radius: 10px;
+
+    }
+
+    /* cards-grid */
+    .match-blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-column-gap: 24px; */
+        /* grid-row-gap: 24px; */
+    }
+
+    .match img {
+        width: 100%;
+    }
+
+    footer {
+        height: 100%;
+        text-align: center;
+
+    }
+
+    footer h3 {
+        padding-top: 24px;
+    }
+
+    hr {
+        width: 100%;
+        margin: 24px 0px;
+        text-align: center;
+    }
+
+    .contact-info,
+    .social-icons {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        margin-top: 0;
+        row-gap: 40px;
+    }
+
+    .contact-info a,
+    .social-icons a {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Tablet-View  */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+
+    /* top banner style  */
+    .banner-deatils {
+        padding-left: 48px;
+    }
+
+    .banner-deatils h1 {
+        font-size: 40px;
+    }
+
+    .banner-img {
+        margin-right: 19px;
+    }
+
+    /* all match container style  */
+    .match-container {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .match-navigation {
+        display: inline-block;
+        background-color: #ffffff;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .match-navigation button {
+        padding: 15px 38px;
+        margin-right: 16px;
+    }
+
+    .all-match {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 24px;
+        width: 100%;
+    }
+
+    /* view button show in tablet  */
+    .view-button {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .view-button button {
+        display: block;
+    }
+
+    /* footer area style  */
+    footer {
+        padding-top: 50px;
+        margin-top: 50px;
+    }
+
+    .footer h4 {
+        margin-top: 0px;
+    }
+
+    hr {
+        margin-bottom: 20px;
+    }
+}
